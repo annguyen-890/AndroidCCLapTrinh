@@ -7,22 +7,90 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/btnTong"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:onClick="XyLyTinhTong"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtB"
+        tools:text="TONG" />
+
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Xin Chao!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="127dp"
+        android:text="So A:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnTong"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="339dp"
+        android:text="SoB"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.100000024" />
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        tools:text="SoB:" />
 
-    <Button
-        android:id="@+id/button"
+    <EditText
+        android:id="@+id/edtB"
+        android:layout_width="204dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="111dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/edtA" />
+
+    <TextView
+        android:id="@+id/edtAB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="520dp" />
+        android:layout_marginTop="107dp"
+        android:text="Tong A + B"
+        app:layout_constraintTop_toTopOf="@+id/btnTong"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <TextView
+        android:id="@+id/tvKetQua"
+        android:layout_width="133dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="92dp"
+        android:text="Ket qua hien ra o day"
+        android:textColor="#812828"
+        app:layout_constraintStart_toStartOf="@+id/edtAB"
+        app:layout_constraintTop_toTopOf="@+id/btnTong" />
+
+    <EditText
+        android:id="@+id/edtA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="107dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
